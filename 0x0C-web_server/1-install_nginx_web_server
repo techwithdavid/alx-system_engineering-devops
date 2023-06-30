@@ -18,11 +18,4 @@ echo "Hello World!" | sudo tee /var/www/html/index.html
 
 # Make sure the ownership and permissions are set correctly
 sudo chown -R www-data:www-data /var/www/html
-sudo chmod -R 755 /var/www/html#!/usr/bin/env bash
-# installs nginx and configure it to listen on port 80
-# print "Hello World"
-
-sudo apt-get -y update
-sudo apt-get -y install nginx
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-sudo service nginx start
+sudo chmod -R 755 /var/www/html
