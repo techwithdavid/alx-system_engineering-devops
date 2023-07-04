@@ -1,12 +1,8 @@
-## Install web server - Nginx.
-##-----------------------------
-## Run sudo update.
+#!/usr/bin/env bash
+# installs nginx and configure it to listen on port 80
+# print "Hello World"
+
 sudo apt-get -y update
-## Install nginx.
 sudo apt-get -y install nginx
-## Change User /var/www
-sudo chown -R ubuntu /var/www
-## Change file default --> index.html to nginx.
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
-## Service nginx - start.
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 sudo service nginx start
